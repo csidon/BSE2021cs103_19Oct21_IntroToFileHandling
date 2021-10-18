@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <sstream> // allows you to READ a string stream from a file
 using namespace std;
 
 
@@ -24,7 +25,8 @@ int main()
 	Supermarket supM[2];
 	ofstream supOutfile; //ofstream is the keyword that is used to declare the file handling variable supOutfile. You can call this anything you like, but Outfile shows that it's an out mode file
 	ofstream supAppfile; //ofstream is the keyword that is used to declare the file handling variable supOutfile. You can call this anything you like, but Outfile shows that it's an out mode file
-
+	ifstream supInfile; //supInfile is the file handle that belongs to the ifstream 
+	fstream supInOutFile; //if you use fstream, it does both input, output, and append
 
 	//outfile.open(path&name, mode) -- syntax to create a new file
 	//Go to folder where you are storing this code !important and create an Excel file (csv)
