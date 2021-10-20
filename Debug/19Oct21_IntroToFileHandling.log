@@ -1,2 +1,13 @@
 ﻿  19Oct21_IntroToFileHandling.cpp
-  19Oct21_IntroToFileHandling.vcxproj -> C:\Users\270158235\OneDrive - UP Education\1 CS103\19Oct21_IntroToFileHandling\Debug\19Oct21_IntroToFileHandling.exe
+C:\Users\270158235\OneDrive - UP Education\1 CS103\19Oct21_IntroToFileHandling\19Oct21_IntroToFileHandling.cpp(69,11): error C2374: 'supInfile': redefinition; multiple initialization
+C:\Users\270158235\OneDrive - UP Education\1 CS103\19Oct21_IntroToFileHandling\19Oct21_IntroToFileHandling.cpp(28): message : see declaration of 'supInfile'
+C:\Users\270158235\OneDrive - UP Education\1 CS103\19Oct21_IntroToFileHandling\19Oct21_IntroToFileHandling.cpp(83,3): error C2065: 'supermarket': undeclared identifier
+C:\Users\270158235\OneDrive - UP Education\1 CS103\19Oct21_IntroToFileHandling\19Oct21_IntroToFileHandling.cpp(87,3): error C2065: 'supermarket': undeclared identifier
+C:\Users\270158235\OneDrive - UP Education\1 CS103\19Oct21_IntroToFileHandling\19Oct21_IntroToFileHandling.cpp(91,9): error C2065: 'supermarket': undeclared identifier
+C:\Users\270158235\OneDrive - UP Education\1 CS103\19Oct21_IntroToFileHandling\19Oct21_IntroToFileHandling.cpp(93,22): error C2065: 'supermarket': undeclared identifier
+C:\Users\270158235\OneDrive - UP Education\1 CS103\19Oct21_IntroToFileHandling\19Oct21_IntroToFileHandling.cpp(98,51): error C2039: 'itemNo': is not a member of 'Supermarket'
+C:\Users\270158235\OneDrive - UP Education\1 CS103\19Oct21_IntroToFileHandling\19Oct21_IntroToFileHandling.cpp(8): message : see declaration of 'Supermarket'
+C:\Users\270158235\OneDrive - UP Education\1 CS103\19Oct21_IntroToFileHandling\19Oct21_IntroToFileHandling.cpp(104,2): error C2065: 'inFile': undeclared identifier
+C:\Users\270158235\OneDrive - UP Education\1 CS103\19Oct21_IntroToFileHandling\19Oct21_IntroToFileHandling.cpp(106,2): error C2143: syntax error: missing ';' before '}'
+C:\Users\270158235\OneDrive - UP Education\1 CS103\19Oct21_IntroToFileHandling\19Oct21_IntroToFileHandling.cpp(109,1): error C2059: syntax error: '}'
+C:\Users\270158235\OneDrive - UP Education\1 CS103\19Oct21_IntroToFileHandling\19Oct21_IntroToFileHandling.cpp(109,1): error C2143: syntax error: missing ';' before '}'

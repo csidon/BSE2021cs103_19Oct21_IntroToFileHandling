@@ -22,7 +22,7 @@ struct Supermarket {
 
 int main()
 {
-	Supermarket supM[2];
+	Supermarket supM[2], supermarket;
 	ofstream supOutfile; //ofstream is the keyword that is used to declare the file handling variable supOutfile. You can call this anything you like, but Outfile shows that it's an out mode file
 	ofstream supAppfile; //ofstream is the keyword that is used to declare the file handling variable supOutfile. You can call this anything you like, but Outfile shows that it's an out mode file
 	ifstream supInfile; //supInfile is the file handle that belongs to the ifstream 
@@ -65,6 +65,57 @@ int main()
 		supAppfile << supM[i].itemNum << "," << supM[i].itemName << "," << supM[i].itemPrice << "\r"; // carriage return = \r   This brings it down to the next line
 	}
 	supAppfile.close();
+
+	ifstream supInfile("Supermarket.csv", ios::in);  //this is an alternative to declaring the file, then opening it [ 
+
+
+	////### FIGURE THIS SHIT OUT!!! ###
+	////Struct Employee transaction
+	string line; //to store the line that is read from the line
+	int linenum = 0; //used as loop index
+	Supermarket smarket[2];
+	int i = 0;
+	while (getline(supInfile, line))
+	{
+		cout << line;
+		istringstream linestream(line);//stringstream separates the line values -- istringstream requires include <sstream>
+		string item;
+		getline(linestream, item, ','); //read separated linestream values and stores it each item
+
+		supermarket.itemNo = item; //store the separated value in structure member empname
+		cout << "\nitemNo: " << supermarket.itemNo;
+		getline(linestream, item, ',');
+		supermarket.itemName = item;
+
+		getline(linestream, item, ',');
+		stringstream ss(item); //convert the data type from string to int
+		ss >> supermarket.itemPrice;//store the separated value in structure member empid
+		smarket[linenum] = supermarket;//push the structure into the array 
+		linenum++; //index variable incremented
+	}
+	int j;
+	for (j = 0; j < 2; j++) {
+		cout << "\nSupermarket item id: " << smarket[j].itemNum;
+		cout << "\nSupermarket item name: " << smarket[j].itemName;
+		cout << "\nSupermarket item price: " << smarket[j].itemPrice;
+	}
+
+	string searchItem;
+	cout << "\nPlease enter the item you want to search:\t";
+	cin >> searchItem;
+
+	for (int j = 0; j < 2; j++)
+	{
+		if (searchItem == smarket[j].itemName)
+		{
+			cout << "\nSupermarket item id: " << smarket[j].itemNum;
+			cout << "\nSupermarket item name: " << smarket[j].itemName;
+			cout << "\nSupermarket item price: " << smarket[j].itemPrice;
+		}
+	}
+
+	//close file
+	supInfile.close();
 
 
 }
